@@ -5,4 +5,5 @@
  `sudo emerge -a eix`
  
  compile with command `make`
+ 
  install with command `sudo make install`
