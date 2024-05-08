@@ -76,7 +76,7 @@ int main(int argc, char* argv[]) {
         printHelp();
     } else if (strcmp(cmd, "upgrade") == 0) {
         char command[256];
-        snprintf(command, sizeof(command), "%s emerge --ask --verbose --deep --update --newuse @world", cmdPrefix);
+        snprintf(command, sizeof(command), "%s emerge --ask --verbose --deep --update --newuse --quiet @world", cmdPrefix);
         system(command);
     } else if (strcmp(cmd, "search") == 0) {
         if (argc < 3) {
