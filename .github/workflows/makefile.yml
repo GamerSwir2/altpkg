@@ -16,9 +16,3 @@ jobs:
 
     - name: Install dependencies
       run: make
-
-      - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: compiled-artifact
-        path: altpkg
